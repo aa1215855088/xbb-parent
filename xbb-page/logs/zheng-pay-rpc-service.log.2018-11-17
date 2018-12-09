@@ -1,0 +1,395 @@
+2018-11-17 23:37:58 [ INFO ] [ ?.java :?(?)]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-11-17 23:38:00 [ INFO ] [ DruidDataSource.java :930(init)]  {dataSource-1} inited
+2018-11-17 23:38:03 [ INFO ] [ ServiceBean.java :107(onApplicationEvent)]   [DUBBO] The service ready on spring started. service: com.hnguigu.xbb.page.service.ContentService, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:38:03 [ INFO ] [ ServiceConfig.java :510(exportLocal)]   [DUBBO] Export dubbo service com.hnguigu.xbb.page.service.ContentService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:38:03 [ INFO ] [ ServiceConfig.java :470(doExportUrlsFor1Protocol)]   [DUBBO] Export dubbo service com.hnguigu.xbb.page.service.ContentService to url dubbo://192.168.5.1:20884/com.hnguigu.xbb.page.service.ContentService?anyhost=true&application=xbb-content&dubbo=2.5.3&interface=com.hnguigu.xbb.page.service.ContentService&methods=findSkuByProductIdAndInventoryNotNull,findProductByProductId&pid=916&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469083517, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:38:03 [ INFO ] [ ServiceConfig.java :481(doExportUrlsFor1Protocol)]   [DUBBO] Register dubbo service com.hnguigu.xbb.page.service.ContentService url dubbo://192.168.5.1:20884/com.hnguigu.xbb.page.service.ContentService?anyhost=true&application=xbb-content&dubbo=2.5.3&interface=com.hnguigu.xbb.page.service.ContentService&methods=findSkuByProductIdAndInventoryNotNull,findProductByProductId&pid=916&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469083517 to registry registry://192.168.5.102:2181/com.alibaba.dubbo.registry.RegistryService?application=xbb-content&client=zkclient&dubbo=2.5.3&pid=916&registry=zookeeper&timestamp=1542469083502, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:38:04 [ INFO ] [ AbstractServer.java :69(<init>)]   [DUBBO] Start NettyServer bind /0.0.0.0:20884, export /192.168.5.1:20884, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:38:04 [ INFO ] [ AbstractRegistry.java :232(loadProperties)]   [DUBBO] Load registry store file C:\Users\lenovo\.dubbo\dubbo-registry-192.168.5.102.cache, data: {com.hnguigu.xbb.product.service.ImgService=empty://192.168.5.1:20883/com.hnguigu.xbb.product.service.ImgService?anyhost=true&application=xbb-product&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.product.service.ImgService&methods=findAll&pid=13404&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469036901, com.hnguigu.xbb.product.service.BrandService=empty://192.168.5.1:20883/com.hnguigu.xbb.product.service.BrandService?anyhost=true&application=xbb-product&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.product.service.BrandService&methods=findAll&pid=13404&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469036824, com.hnguigu.xbb.product.service.ColorService=empty://192.168.5.1:20883/com.hnguigu.xbb.product.service.ColorService?anyhost=true&application=xbb-product&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.product.service.ColorService&methods=updateNotNullById,saveNotNull,find,deleteById,findOne,findAll&pid=13404&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469036992, com.hnguigu.xbb.product.service.UploadService=empty://192.168.5.1:20883/com.hnguigu.xbb.product.service.UploadService?anyhost=true&application=xbb-product&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.product.service.UploadService&methods=fastDFSUploadPic&pid=13404&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469037072, com.hnguigu.xbb.product.service.FeatureService=empty://192.168.5.1:20883/com.hnguigu.xbb.product.service.FeatureService?anyhost=true&application=xbb-product&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.product.service.FeatureService&methods=findAll&pid=13404&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469036927, com.hnguigu.xbb.sso.service.LoginService=empty://192.168.5.1/com.hnguigu.xbb.sso.service.LoginService?application=xbb-login-web&category=configurators&dubbo=2.5.3&interface=com.hnguigu.xbb.sso.service.LoginService&methods=logout,login,checkLogin&pid=7400&revision=1.0-SNAPSHOT&side=consumer&timeout=10000&timestamp=1542462241509 empty://192.168.5.1/com.hnguigu.xbb.sso.service.LoginService?application=xbb-login-web&category=routers&dubbo=2.5.3&interface=com.hnguigu.xbb.sso.service.LoginService&methods=logout,login,checkLogin&pid=7400&revision=1.0-SNAPSHOT&side=consumer&timeout=10000&timestamp=1542462241509 dubbo://192.168.5.1:20880/com.hnguigu.xbb.sso.service.LoginService?anyhost=true&application=xbb-sso&dubbo=2.5.3&interface=com.hnguigu.xbb.sso.service.LoginService&methods=logout,login,checkLogin&pid=1056&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542457157397, com.hnguigu.xbb.product.service.TypeService=empty://192.168.5.1:20883/com.hnguigu.xbb.product.service.TypeService?anyhost=true&application=xbb-product&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.product.service.TypeService&methods=findAll&pid=13404&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469037025, com.hnguigu.xbb.product.service.SkuService=empty://192.168.5.1:20883/com.hnguigu.xbb.product.service.SkuService?anyhost=true&application=xbb-product&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.product.service.SkuService&methods=updateSku,findByProductId,findAll&pid=13404&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469036953, com.hnguigu.xbb.product.service.ProductService=empty://192.168.5.1:20883/com.hnguigu.xbb.product.service.ProductService?anyhost=true&application=xbb-product&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.product.service.ProductService&methods=add,selectPage,delProduct,findProductById,selectByMap,itemUpShelf,checkName,itemDownShelf,findAll,findAllByMap&pid=13404&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469026795, com.hnguigu.xbb.page.service.ContentService=empty://192.168.5.1:20884/com.hnguigu.xbb.page.service.ContentService?anyhost=true&application=xbb-content&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.page.service.ContentService&methods=findSkuByProductIdAndInventoryNotNull,findProductByProductId&pid=12180&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542165684065}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:38:04 [ INFO ] [ ZkEventThread.java :64(run)]  Starting ZkClient event thread.
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:host.name=LAPTOP-OIBH48MD
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:java.version=1.8.0_144
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:java.vendor=Oracle Corporation
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:java.home=E:\JDK\jdk1.8.0_144\jre
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:java.class.path=D:\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;D:\IntelliJ IDEA 2018.2.5\lib\idea_rt.jar
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:java.library.path=E:\JDK\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\Program Files (x86)\Java\jdk1.8.0_162\New Folder\bin;E:\Program Files (x86)\Java\jdk1.8.0_162\New Folder\jre\bin;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\bin;D:\myqsl\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;M2=D:\apache-maven-3.5.4\bin;d:\Git\cmd;C:\Users\lenovo\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\lenovo\AppData\Local\Programs\Python\Python36\;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\lenovo\atom\bin;C:\Users\lenovo\AppData\Local\atom\bin;C:\Users\lenovo\AppData\Local\GitHubDesktop\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:java.io.tmpdir=C:\Users\lenovo\AppData\Local\Temp\
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:java.compiler=<NA>
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:os.name=Windows 10
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:os.arch=amd64
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:os.version=10.0
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:user.name=lenovo
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:user.home=C:\Users\lenovo
+2018-11-17 23:38:13 [ INFO ] [ Environment.java :100(logEnv)]  Client environment:user.dir=E:\javaweb\项目实战\新巴巴电商系统springmvc\xbb-parent\xbb-content\xbb-content-service
+2018-11-17 23:38:13 [ INFO ] [ ZooKeeper.java :438(<init>)]  Initiating client connection, connectString=192.168.5.102:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3e7f3014
+2018-11-17 23:38:13 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:38:13 [ INFO ] [ ClientCnxn$SendThread.java :852(primeConnection)]  Socket connection established to 192.168.5.102/192.168.5.102:2181, initiating session
+2018-11-17 23:38:13 [ INFO ] [ ClientCnxn$SendThread.java :1235(onConnected)]  Session establishment complete on server 192.168.5.102/192.168.5.102:2181, sessionid = 0x100025403690058, negotiated timeout = 30000
+2018-11-17 23:38:13 [ INFO ] [ ZkClient.java :449(processStateChanged)]  zookeeper state changed (SyncConnected)
+2018-11-17 23:38:13 [ INFO ] [ AbstractRegistry.java :302(register)]   [DUBBO] Register: dubbo://192.168.5.1:20884/com.hnguigu.xbb.page.service.ContentService?anyhost=true&application=xbb-content&dubbo=2.5.3&interface=com.hnguigu.xbb.page.service.ContentService&methods=findSkuByProductIdAndInventoryNotNull,findProductByProductId&pid=916&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469083517, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:38:13 [ INFO ] [ AbstractRegistry.java :325(subscribe)]   [DUBBO] Subscribe: provider://192.168.5.1:20884/com.hnguigu.xbb.page.service.ContentService?anyhost=true&application=xbb-content&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.page.service.ContentService&methods=findSkuByProductIdAndInventoryNotNull,findProductByProductId&pid=916&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469083517, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:38:13 [ INFO ] [ AbstractRegistry.java :422(notify)]   [DUBBO] Notify urls for subscribe url provider://192.168.5.1:20884/com.hnguigu.xbb.page.service.ContentService?anyhost=true&application=xbb-content&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.page.service.ContentService&methods=findSkuByProductIdAndInventoryNotNull,findProductByProductId&pid=916&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469083517, urls: [empty://192.168.5.1:20884/com.hnguigu.xbb.page.service.ContentService?anyhost=true&application=xbb-content&category=configurators&check=false&dubbo=2.5.3&interface=com.hnguigu.xbb.page.service.ContentService&methods=findSkuByProductIdAndInventoryNotNull,findProductByProductId&pid=916&revision=1.0-SNAPSHOT&side=provider&timeout=10000&timestamp=1542469083517], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-11-17 23:49:47 [ INFO ] [ ClientCnxn$SendThread.java :1098(run)]  Unable to read additional data from server sessionid 0x100025403690058, likely server has closed socket, closing socket connection and attempting reconnect
+2018-11-17 23:49:47 [ INFO ] [ ZkClient.java :449(processStateChanged)]  zookeeper state changed (Disconnected)
+2018-11-17 23:49:48 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:49:49 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:49:50 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:49:51 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:49:53 [ WARN ] [ DefaultMessageListenerContainer.java :880(handleListenerSetupFailure)]  Setup of JMS message listener invoker failed for destination 'STATIC_PAGE_MESSAGE' - trying to recover. Cause: The Consumer is closed
+2018-11-17 23:49:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:49:53 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:49:54 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:49:56 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:49:57 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:49:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:49:59 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:50:00 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:50:01 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:50:02 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:50:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:04 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:50:05 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:50:07 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:50:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:08 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:50:10 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:50:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=5, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=6, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=7, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:29 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:50:31 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:50:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=8, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=9, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=10, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=11, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:52 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:50:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=12, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:50:54 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:50:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=13, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=14, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=15, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=16, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:15 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:51:16 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:51:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=17, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=18, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=19, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=20, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:37 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:51:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=21, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:39 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:51:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=22, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=23, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=24, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:51:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=25, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:00 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:52:01 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:52:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=26, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=27, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=28, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=29, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:22 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:52:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=30, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:24 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:52:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=31, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=32, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=33, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=34, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:45 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:52:46 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:52:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=35, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=36, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:52:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=37, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=38, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:07 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:53:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=39, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:09 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:53:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=40, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=41, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=42, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=43, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:30 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:53:32 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:53:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=44, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=45, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=46, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=47, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:53 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:53:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=48, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:53:54 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:53:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=49, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=50, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=51, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=52, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:15 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:54:17 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:54:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=53, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=54, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=55, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=56, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:38 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:54:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=57, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:40 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:54:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=58, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=59, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=60, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:54:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=61, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:01 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:55:03 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:55:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=62, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=63, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=64, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=65, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=66, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:24 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:55:26 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:55:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=67, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=68, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=69, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=70, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:47 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:55:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=71, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:49 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:55:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=72, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:55:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=73, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=74, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=75, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:10 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:56:11 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:56:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=76, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=77, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=78, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=79, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:32 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:56:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=80, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:34 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:56:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=81, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=82, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=83, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=84, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:56:55 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:56:57 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:56:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=85, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=86, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=87, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=88, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:18 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:57:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=89, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:19 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:57:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=90, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=91, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=92, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=93, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:40 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:57:42 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:57:44 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=94, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:49 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=95, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:54 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=96, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:57:59 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=97, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:03 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:58:04 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=98, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:05 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:58:09 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=99, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:14 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=100, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:19 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=101, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:24 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=102, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:26 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:58:27 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:58:29 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=103, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:34 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=104, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:39 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=105, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:44 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=106, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:48 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:58:49 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=107, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:58:50 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:58:54 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=108, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=109, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=110, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=111, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:11 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:59:12 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:59:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=112, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=113, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=114, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=115, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:33 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:59:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=116, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:35 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-17 23:59:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=117, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=118, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=119, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)]  Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=120, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-17 23:59:56 [ WARN ] [ ClientCnxn$SendThread.java :1102(run)]  Session 0x100025403690058 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2018-11-17 23:59:57 [ INFO ] [ ClientCnxn$SendThread.java :975(logStartConnect)]  Opening socket connection to server 192.168.5.102/192.168.5.102:2181. Will not attempt to authenticate using SASL (unknown error)

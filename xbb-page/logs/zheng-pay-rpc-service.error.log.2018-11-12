@@ -1,0 +1,946 @@
+2018-11-12 19:51:27 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myMessageListener': Unsatisfied dependency expressed through field 'staticPageService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staticPageService': Unsatisfied dependency expressed through field 'configuration'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'freemarker.template.Configuration' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=configurer)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staticPageService': Unsatisfied dependency expressed through field 'configuration'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'freemarker.template.Configuration' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=configurer)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1136)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1064)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'freemarker.template.Configuration' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=configurer)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1102)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1064)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 37 more
+2018-11-12 19:53:21 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myMessageListener': Unsatisfied dependency expressed through field 'staticPageService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staticPageService': Unsatisfied dependency expressed through field 'configuration'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'freemarker.template.Configuration' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=configurer)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staticPageService': Unsatisfied dependency expressed through field 'configuration'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'freemarker.template.Configuration' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=configurer)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1136)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1064)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'freemarker.template.Configuration' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=configurer)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1102)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1064)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 37 more
+2018-11-12 20:55:14 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'staticPageService' defined in file [E:\javaweb\项目实战\新巴巴电商系统springmvc\xbb-parent\xbb-context\xbb-context-service\target\classes\META-INF\spring\applicationContext-freemarker.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'configuration' of bean class [com.hnguigu.xbb.page.service.impl.StaticPageServiceImpl]: Bean property 'configuration' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1281)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'configuration' of bean class [com.hnguigu.xbb.page.service.impl.StaticPageServiceImpl]: Bean property 'configuration' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.createNotWritablePropertyException(BeanWrapperImpl.java:239)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.processLocalProperty(AbstractNestablePropertyAccessor.java:435)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:290)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:278)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:95)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1567)
+	... 22 more
+2018-11-12 21:28:45 [ ERROR ] [ AbstractMessageListenerContainer.java :811(rollbackOnExceptionIfNecessary)] Application exception overridden by rollback exception
+java.lang.NullPointerException
+	at com.hnguigu.xbb.page.message.PageMessageListener.onMessage(CustomMessageListener.java:59)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 21:28:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:28:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:28:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=5, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=6, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=7, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=8, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=9, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=10, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=11, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=12, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=13, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:29:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=14, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=15, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=16, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=17, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=18, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=19, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=20, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=21, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=22, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=23, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=24, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=25, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:30:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=26, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=27, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=28, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=29, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=30, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=31, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=32, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=33, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=34, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=35, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=36, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=37, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:31:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=38, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=39, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=40, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=41, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=42, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=43, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=44, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=45, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=46, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=47, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=48, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=49, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:32:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=50, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=51, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=52, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=53, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=54, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=55, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=56, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=57, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=58, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=59, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=60, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=61, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:33:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=62, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=63, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=64, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=65, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=66, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=67, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=68, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=69, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=70, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=71, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=72, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=73, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:34:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=74, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=75, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=76, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=77, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=78, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=79, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=80, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=81, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=82, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=83, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=84, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=85, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:35:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=86, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=87, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=88, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=89, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=90, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=91, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=92, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=93, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:35 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=94, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:40 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=95, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:45 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=96, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:50 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=97, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:36:55 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=98, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=99, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:05 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=100, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:10 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=101, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:15 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=102, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:20 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=103, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=104, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=105, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=106, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=107, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=108, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=109, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:37:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=110, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=111, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=112, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=113, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=114, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=115, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=116, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=117, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=118, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=119, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=120, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=121, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:38:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=122, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=123, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=124, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=125, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=126, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=127, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=128, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=129, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=130, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=131, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=132, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=133, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:39:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=134, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=135, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=136, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=137, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=138, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=139, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=140, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=141, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=142, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=143, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=144, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=145, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:40:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=146, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=147, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=148, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=149, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=150, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=151, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=152, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=153, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=154, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=155, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=156, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=157, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:41:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=158, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=159, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=160, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=161, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=162, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=163, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=164, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=165, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=166, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=167, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=168, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=169, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:42:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=170, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=171, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=172, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=173, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=174, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=175, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=176, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=177, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=178, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=179, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=180, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=181, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:43:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=182, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=183, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=184, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=185, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=186, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=187, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=188, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=189, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=190, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=191, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=192, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=193, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:44:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=194, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=195, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=196, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=197, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=198, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=199, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=200, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=201, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=202, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=203, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=204, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=205, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:45:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=206, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=207, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=208, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=209, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=210, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=211, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=212, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=213, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=214, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:41 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=215, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:46 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=216, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:51 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=217, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:46:56 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=218, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:47:01 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=219, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:47:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=220, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:47:11 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=221, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:47:16 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=222, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:47:21 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=223, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:47:26 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=224, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 21:47:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=225, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:30:59 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-product" id="xbb-product2" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-product" id="xbb-product2" />
+	at com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet(ReferenceBean.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 22 more
+2018-11-12 22:31:30 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet(ReferenceBean.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 22 more
+2018-11-12 22:33:45 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet(ReferenceBean.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 22 more
+2018-11-12 22:35:20 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet(ReferenceBean.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 22 more
+2018-11-12 22:36:59 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet(ReferenceBean.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 22 more
+2018-11-12 22:40:42 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet(ReferenceBean.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 22 more
+2018-11-12 22:42:19 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet(ReferenceBean.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 22 more
+2018-11-12 22:44:21 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="xbb-product" id="xbb-product" /> and <dubbo:application name="xbb-content" id="xbb-content" />
+	at com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet(ReferenceBean.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 22 more
+2018-11-12 22:47:54 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+java.lang.IllegalStateException: The interface class class com.hnguigu.xbb.page.service.impl.ContentServiceImpl is not a interface!
+	at com.alibaba.dubbo.config.AbstractInterfaceConfig.checkInterfaceAndMethods(AbstractInterfaceConfig.java:251)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:202)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 22:49:22 [ ERROR ] [ ContextLoader.java :350(initWebApplicationContext)] Context initialization failed
+java.lang.IllegalStateException: The interface class class com.hnguigu.xbb.page.service.impl.ContentServiceImpl is not a interface!
+	at com.alibaba.dubbo.config.AbstractInterfaceConfig.checkInterfaceAndMethods(AbstractInterfaceConfig.java:251)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:202)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 22:53:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:53:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:53:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:53:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:53:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:53:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=5, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:53:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=6, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:03 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=7, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:08 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=8, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=9, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=10, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:23 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=11, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:28 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=12, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:33 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=13, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:38 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=14, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:43 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=15, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=16, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:53 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=17, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:54:58 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=18, maxAttempts=unlimited}. Cause: Connection closed
+2018-11-12 22:56:12 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:56:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:56:24 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:56:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:56:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:56:42 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=5, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:56:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=6, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:56:54 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=7, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=8, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:06 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=9, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:12 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=10, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:18 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=11, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:24 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=12, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:30 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=13, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:36 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=14, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:42 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=15, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:48 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=16, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:57:54 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=17, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:58:00 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=18, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:58:07 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=19, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:58:13 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=20, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:58:19 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=21, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:58:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=22, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:58:31 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=23, maxAttempts=unlimited}. Cause: Error while attempting to add new Connection to the pool; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2018-11-12 22:59:56 [ ERROR ] [ _Log4jLoggerFactory$Log4jLogger.java :59(error)] Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sku.price  [in template "product.ftl" at line 68, column 41]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sku.price}  [in template "product.ftl" at line 68, column 39]
+
+----
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:467)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:389)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:358)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:317)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.hnguigu.xbb.page.service.impl.StaticPageServiceImpl.generateStaticPages(StaticPageServiceImpl.java:78)
+	at com.hnguigu.xbb.page.message.PageMessageListener.onMessage(CustomMessageListener.java:67)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 23:04:52 [ ERROR ] [ _Log4jLoggerFactory$Log4jLogger.java :59(error)] Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> product.image  [in template "product.ftl" at line 247, column 71]
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${product.image.split(",")[0]}  [in template "product.ftl" at line 247, column 69]
+
+----
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.MethodCall._eval(MethodCall.java:58)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:52)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.hnguigu.xbb.page.service.impl.StaticPageServiceImpl.generateStaticPages(StaticPageServiceImpl.java:78)
+	at com.hnguigu.xbb.page.message.PageMessageListener.onMessage(CustomMessageListener.java:67)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 23:07:18 [ ERROR ] [ _Log4jLoggerFactory$Log4jLogger.java :59(error)] Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> product.description  [in template "product.ftl" at line 330, column 23]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${product.description}  [in template "product.ftl" at line 330, column 21]
+
+----
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:467)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:389)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:358)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.hnguigu.xbb.page.service.impl.StaticPageServiceImpl.generateStaticPages(StaticPageServiceImpl.java:78)
+	at com.hnguigu.xbb.page.message.PageMessageListener.onMessage(CustomMessageListener.java:67)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 23:08:50 [ ERROR ] [ _Log4jLoggerFactory$Log4jLogger.java :59(error)] Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> product.image  [in template "product.ftl" at line 247, column 57]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${product.image}  [in template "product.ftl" at line 247, column 55]
+
+----
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:467)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:389)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:358)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.hnguigu.xbb.page.service.impl.StaticPageServiceImpl.generateStaticPages(StaticPageServiceImpl.java:78)
+	at com.hnguigu.xbb.page.message.PageMessageListener.onMessage(CustomMessageListener.java:67)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 23:09:28 [ ERROR ] [ _Log4jLoggerFactory$Log4jLogger.java :59(error)] Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> product.description  [in template "product.ftl" at line 330, column 23]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${product.description}  [in template "product.ftl" at line 330, column 21]
+
+----
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:467)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:389)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:358)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.hnguigu.xbb.page.service.impl.StaticPageServiceImpl.generateStaticPages(StaticPageServiceImpl.java:78)
+	at com.hnguigu.xbb.page.message.PageMessageListener.onMessage(CustomMessageListener.java:67)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 23:11:49 [ ERROR ] [ _Log4jLoggerFactory$Log4jLogger.java :59(error)] Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> query  [in template "commons/footer.html" at line 82, column 23]
+
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${query}  [in template "commons/footer.html" at line 82, column 21]
+	- Reached through: #include "commons/footer.html"  [in template "product.ftl" at line 415, column 9]
+
+----
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:467)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:389)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:358)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.include(Environment.java:2582)
+	at freemarker.core.Include.accept(Include.java:171)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.hnguigu.xbb.page.service.impl.StaticPageServiceImpl.generateStaticPages(StaticPageServiceImpl.java:78)
+	at com.hnguigu.xbb.page.message.PageMessageListener.onMessage(CustomMessageListener.java:67)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 23:22:25 [ ERROR ] [ DefaultMessageListenerContainer.java :947(refreshConnectionUntilSuccessful)] Could not refresh JMS Connection for destination 'STATIC_PAGE_MESSAGE' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Connection closed

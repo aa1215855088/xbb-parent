@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!-- 提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="xbb-manager-web"/>
+
+    <!-- 这里使用的注册中心是zookeeper -->
+    <dubbo:registry address="zookeeper://192.168.5.102:2181"
+                    client="zkclient"/>
+
+    <!-- 从注册中心中查找服务 -->
+    <!--获取商品服务-->
+    <dubbo:reference interface="com.hnguigu.xbb.product.service.ProductService" id="productService" timeout="10000"/>
+    <!--获取商品品牌服务-->
+    <dubbo:reference interface="com.hnguigu.xbb.product.service.BrandService" id="brandService" timeout="10000"/>
+    <!--获取商品类型服务-->
+    <dubbo:reference interface="com.hnguigu.xbb.product.service.TypeService" id="typeService" timeout="10000"/>
+    <!--获取商品尺码服务-->
+    <dubbo:reference interface="com.hnguigu.xbb.product.service.SkuService" id="skuService" timeout="10000"/>
+    <!--获取商品属性服务-->
+    <dubbo:reference interface="com.hnguigu.xbb.product.service.FeatureService" id="featureService" timeout="10000"/>
+    <!--获取商品颜色服务-->
+    <dubbo:reference interface="com.hnguigu.xbb.product.service.ColorService" id="colorService" timeout="10000"/>
+    <!--获取商品图片服务-->
+    <dubbo:reference interface="com.hnguigu.xbb.product.service.ImgService" id="imgService" timeout="10000"/>
+    <!--获取文件上传服务-->
+    <dubbo:reference interface="com.hnguigu.xbb.product.service.UploadService" id="uploadService" timeout="10000"/>
+
+</beans>

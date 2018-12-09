@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:comtext="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <comtext:component-scan base-package="com.hnguigu.xbb.product.service"/>
+    <dubbo:application name="xbb-product"/>
+
+    <dubbo:registry address="zookeeper://192.168.5.102:2181"/>
+
+    <dubbo:protocol name="dubbo" port="20883"/>
+
+    <!--<dubbo:monitor protocol="registry"/>-->
+    <!--发布商品服务-->
+    <dubbo:service interface="com.hnguigu.xbb.product.service.ProductService" ref="productService" timeout="10000"/>
+    <!--发布商品品牌服务-->
+    <dubbo:service interface="com.hnguigu.xbb.product.service.BrandService" ref="brandServie" timeout="10000"/>
+    <!--发布商品图片服务-->
+    <dubbo:service interface="com.hnguigu.xbb.product.service.ImgService" ref="imgService" timeout="10000"/>
+    <!--发布商品属性服务-->
+    <dubbo:service interface="com.hnguigu.xbb.product.service.FeatureService" ref="featureService" timeout="10000"/>
+    <!--发布商品尺码服务-->
+    <dubbo:service interface="com.hnguigu.xbb.product.service.SkuService" ref="skuService" timeout="10000"/>
+    <!--发布商品颜色服务-->
+    <dubbo:service interface="com.hnguigu.xbb.product.service.ColorService" ref="colorService" timeout="10000"/>
+    <!--发布商品类型服务-->
+    <dubbo:service interface="com.hnguigu.xbb.product.service.TypeService" ref="typeService" timeout="10000"/>
+    <!--发布文件上传服务-->
+    <dubbo:service interface="com.hnguigu.xbb.product.service.UploadService" ref="uploadService" timeout="10000"/>
+
+
+</beans>

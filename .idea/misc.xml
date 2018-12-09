@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/xbb-cart-web" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-cart/xbb-cart-service" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-content/xbb-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-home-web" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-login-web" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-order-web" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-order/xbb-order-service" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-page/xbb-page-service" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-product/xbb-product-service" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-search-web" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-search/xbb-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-sso/xbb-sso-service" />
+    <file type="web" url="file://$PROJECT_DIR$/xbb-user/xbb-user-service" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/xbb-order/xbb-order-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

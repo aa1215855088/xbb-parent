@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-cart-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-cart/xbb-cart-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-cart/xbb-cart-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-content" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-content/xbb-content-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-content/xbb-content-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-home-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-login-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-order-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-order/xbb-order-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-order/xbb-order-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-order/xbb-order-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-order/xbb-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-page" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-page/xbb-page-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-page/xbb-page-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-product/xbb-product-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-product/xbb-product-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-product/xbb-product-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-product/xbb-product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-search-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-search/xbb-search-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-search/xbb-search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-sql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-sso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-sso/xbb-sso-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-sso/xbb-sso-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-user/xbb-user-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-user/xbb-user-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-user/xbb-user-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xbb-user/xbb-user-service" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

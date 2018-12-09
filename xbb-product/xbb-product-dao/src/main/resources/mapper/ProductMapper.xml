@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.xbb.product.mapper.ProductMapper">
+
+    <resultMap id="result_Product_Map" type="com.hnguigu.xbb.product.domain.Product">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="no" property="no"/>
+        <result column="weight" property="weight"/>
+        <result column="is_new" property="isNew"/>
+        <result column="is_hot" property="isHot"/>
+        <result column="is_commend" property="isCommend"/>
+        <result column="create_time" property="createTime"/>
+        <result column="create_user_id" property="createUserId"/>
+        <result column="check_time" property="checkTime"/>
+        <result column="check_user_id" property="checkUserId"/>
+        <result column="is_show" property="isShow"/>
+        <result column="is_del" property="isDel"/>
+        <result column="type_id" property="typeId"/>
+        <result column="brand_id" property="brandId"/>
+        <result column="keywords" property="keywords"/>
+        <result column="sales" property="sales"/>
+        <result column="description" property="description"/>
+        <result column="package_list" property="packageList"/>
+        <result column="feature" property="feature"/>
+        <result column="color" property="color"/>
+        <result column="size" property="size"/>
+        <result column="image" property="image"/>
+    </resultMap>
+    <insert id="save" useGeneratedKeys="true" keyProperty="id" parameterType="com.hnguigu.xbb.product.domain.Product">
+        insert into bbs_product (no,
+                                 name,
+                                 weight,
+                                 is_new,
+                                 is_hot,
+                                 is_commend,
+                                 create_time,
+                                 is_show,
+                                 type_id,
+                                 brand_id,
+                                 feature,
+                                 color,
+                                 size,
+                                 is_del,
+                                 image)
+        values (#{no},
+                #{name},
+                #{weight},
+                #{isNew},
+                #{isHot},
+                #{isCommend},
+                now(),
+                0,
+                #{typeId},
+                #{brandId},
+                #{feature},
+                #{color},
+                #{size},
+                1,
+                #{image});
+    </insert>
+
+    <select id="findAll" resultMap="result_Product_Map">
+        select *
+        from bbs_product;
+    </select>
+    <select id="findAllByMap" resultMap="result_Product_Map">
+        select
+        *
+        from bbs_product
+        <where>
+            and is_del=1
+            <if test="brandId!=null and brandId!=0">
+                and brand_id=#{brandId}
+            </if>
+            <if test="isShow!=null">
+                and is_show=#{isShow}
+            </if>
+            <if test="name!='' and name !=null">
+                and name like '%${name}%'
+            </if>
+        </where>
+    </select>
+    <select id="getHotProduct" resultMap="result_Product_Map">
+        select
+            id,
+            name
+        from bbs_product
+        where is_hot = 1
+        order by sales desc;
+    </select>
+    <select id="findItemSearchAll" resultType="com.hnguigu.xbb.product.dto.ItemSearchDTO">
+        select
+            bp.id        id,
+            bp.name      name,
+            bp.image     image,
+            bb.name      brand,
+            bs.sku_price price,
+            bt.name      type,
+            bf.name      feature
+        from bbs_product bp
+                 left join bbs_brand bb on bp.brand_id = bb.id
+                 left join bbs_sku bs on bp.id = bs.product_id
+                 left join bbs_type bt on bp.type_id = bt.id
+                 left join bbs_feature bf on bp.feature = bf.id
+    </select>
+    <select id="findItemSearchById" resultType="com.hnguigu.xbb.product.dto.ItemSearchDTO">
+        select
+            bp.id        id,
+            bp.name      name,
+            bp.image     image,
+            bb.name      brand,
+            min(bs.sku_price) price,
+            bt.name      type,
+            bf.name      feature
+        from bbs_product bp
+                 left join bbs_brand bb on bp.brand_id = bb.id
+                 left join bbs_sku bs on bp.id = bs.product_id
+                 left join bbs_type bt on bp.type_id = bt.id
+                 left join bbs_feature bf on bp.feature = bf.id
+        where bp.id = #{id}
+    </select>
+
+</mapper>

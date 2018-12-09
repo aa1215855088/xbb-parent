@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.xbb.product.mapper.SkuMapper">
+
+    <resultMap id="result_BbsSku_Map" type="com.hnguigu.xbb.product.domain.Sku">
+        <id column="id" property="id"/>
+        <result column="product_id" property="productId"/>
+        <result column="sku_price" property="skuPrice"/>
+        <result column="stock_inventory" property="stockInventory"/>
+        <result column="color_id" property="colorId"/>
+        <result column="size" property="size"/>
+        <result column="delive_fee" property="deliveFee"/>
+        <result column="sku_upper_limit" property="skuUpperLimit"/>
+        <result column="location" property="location"/>
+        <result column="sku_img" property="skuImg"/>
+        <result column="sku_sort" property="skuSort"/>
+        <result column="sku_name" property="skuName"/>
+        <result column="market_price" property="marketPrice"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_user_id" property="createUserId"/>
+        <result column="update_user_id" property="updateUserId"/>
+        <result column="last_status" property="lastStatus"/>
+        <result column="sku_type" property="skuType"/>
+        <result column="sales" property="sales"/>
+        <association property="product" column="product_id" javaType="com.hnguigu.xbb.product.domain.Product">
+            <result column="no" property="no"/>
+        </association>
+        <association property="color" column="colorId" javaType="com.hnguigu.xbb.product.domain.Color">
+            <result column="name" property="name"/>
+            <result column="cid" property="id"/>
+        </association>
+    </resultMap>
+
+    <update id="InventoryReduction">
+        update bbs_sku
+        set  stock_inventory=stock_inventory-#{num}
+        where id=#{skuId};
+    </update>
+    <select id="findAll" resultType="com.hnguigu.xbb.product.domain.Sku">
+        select *
+        from bbs_sku;
+    </select>
+    <select id="findByProductId" resultMap="result_BbsSku_Map">
+        select sku.*, color.id cid, color.name, bp.no
+        from bbs_sku sku
+                 left join bbs_color color on sku.color_id = color.id
+                 left join bbs_product bp on sku.product_id = bp.id
+        where product_id = #{id};
+    </select>
+    <select id="findSkuByProductIdAndInventoryNotNull" resultMap="result_BbsSku_Map">
+        select sku.*, color.id cid, color.name, bp.no
+        from bbs_sku sku
+                 left join bbs_color color on sku.color_id = color.id
+                 left join bbs_product bp on sku.product_id = bp.id
+        where product_id = #{id}
+          and stock_inventory > 0;
+    </select>
+    <select id="findBySkuId" resultType="com.hnguigu.xbb.product.dto.CartDTO">
+        select
+            sk.id              id,
+            sk.sku_price       price,
+            bp.name            name,
+            bp.image           image,
+            sk.sku_upper_limit skuUpperLimit,
+            fe.name            feature,
+            bc.name            color,
+            bt.name            type,
+            bb.name            brand,
+            sk.size            size,
+            sk.delive_fee      deliveFee
+        from bbs_sku sk
+                 left join bbs_product bp on sk.product_id = bp.id
+                 left join bbs_type bt on bp.type_id = bt.id
+                 left join bbs_brand bb on bp.brand_id = bb.id
+                 left join bbs_color bc on sk.color_id = bc.id
+                 left join bbs_feature fe on bp.feature = fe.id
+        where sk.id = #{id} and bp.is_show=1
+    </select>
+
+    <insert id="save">
+        insert into bbs_sku (product_id,
+                             color_id,
+                             size,
+                             delive_fee,
+                             sku_price,
+                             stock_inventory,
+                             sku_upper_limit,
+                             market_price,
+                             create_time)
+        values (#{productId},
+                #{colorId},
+                #{size},
+                #{deliveFee},
+                #{skuPrice},
+                #{stockInventory},
+                #{skuUpperLimit},
+                #{marketPrice},
+                #{createTime})
+    </insert>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xbb-cart-interface" />
+        <module name="xbb-cart-service" />
+        <module name="xbb-cart-web" />
+        <module name="xbb-common" />
+        <module name="xbb-content-interface" />
+        <module name="xbb-content-service" />
+        <module name="xbb-home-web" />
+        <module name="xbb-login-web" />
+        <module name="xbb-manager-web" />
+        <module name="xbb-order-dao" />
+        <module name="xbb-order-domain" />
+        <module name="xbb-order-interface" />
+        <module name="xbb-order-service" />
+        <module name="xbb-order-web" />
+        <module name="xbb-page-interface" />
+        <module name="xbb-page-service" />
+        <module name="xbb-product-dao" />
+        <module name="xbb-product-domain" />
+        <module name="xbb-product-interface" />
+        <module name="xbb-product-service" />
+        <module name="xbb-search-interface" />
+        <module name="xbb-search-service" />
+        <module name="xbb-search-web" />
+        <module name="xbb-sql" />
+        <module name="xbb-sso-interface" />
+        <module name="xbb-sso-service" />
+        <module name="xbb-ui" />
+        <module name="xbb-user-dao" />
+        <module name="xbb-user-domain" />
+        <module name="xbb-user-interface" />
+        <module name="xbb-user-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

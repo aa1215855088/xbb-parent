@@ -1,0 +1,782 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>黑色瑜伽服- 新巴巴</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/css/babasport.css"/>
+    <link href="/css/a.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/css/pshow.css" media="all"/>
+    <script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
+    <script type="text/javascript">
+        window.pageConfig = {
+            compatible: true,
+            product: {
+                skuid: 1221882,
+                name: '\u957f\u8679\uff08\u0043\u0048\u0041\u004e\u0047\u0048\u004f\u004e\u0047\uff09\u004c\u0045\u0044\u0034\u0032\u0035\u0033\u0038\u0045\u0053\u0020\u0034\u0032\u82f1\u5bf8\u0020\u7a84\u8fb9\u84dd\u5149\u004c\u0045\u0044\u6db2\u6676\u7535\u89c6\uff08\u9ed1\u8272\uff09',
+                skuidkey: 'E804B1D153D29E36088A33A134D85EEA',
+                href: 'http://item.jd.com/1221882.html',
+                src: 'jfs/t304/157/750353441/93159/e4ee9876/54227256N20d4f5ec.jpg',
+                cat: [737, 794, 798],
+                brand: 20710,
+                nBrand: 20710,
+                tips: false,
+                type: 1,
+                venderId: 0,
+                shopId: '0',
+                TJ: '0',
+                specialAttrs: ["HYKHSP-0", "isHaveYB", "isSelfService-0",
+                    "isWeChatStock-0", "isCanUseJQ", "isOverseaPurchase-0",
+                    "YuShou", "is7ToReturn-1", "isCanVAT"],
+                videoPath: '',
+                HM: '0'
+            }
+        };
+        $(function () {
+            //初始化加载
+            $("#colors div:first").trigger("click");
+        });
+
+
+        //SKUID　全局变量
+        var skuId;
+        var colorId;
+
+        //点击颜色  id == 颜色ID
+        function colorToRed(target, id) {
+            colorId = id;
+            //清理成白色
+// 	$("#colors div").attr("class","item");
+            $("#colors div").removeClass("selected");
+            //点击的颜色变成红边框
+// 	$(target).attr("class","item selected");
+            $(target).addClass("selected");
+
+            //id  ajax
+            var flag = 0;
+            var html = "";
+		if (id == '1') {
+            if (flag == 0) {
+                html += '<div class="item selected" id="XL" onclick="sizeToRed(this,\'XL\')">'
+                        + '<b></b><a href="javascript:;" title="XL" >XL</a>'
+                        + '</div>';
+                flag = 1;
+
+                //颜色及尺码 都成红色
+                //设置巴巴价
+                $("#bbs-price").html('11');
+                //保存一个SKuＩＤ
+                skuId = '554';
+            } else {
+
+                html += '<div class="item" id="XL" onclick="sizeToRed(this,\'XL\')">'
+                        + '<b></b><a href="javascript:;" title="XL" >XL</a>'
+                        + '</div>';
+            }
+        }
+            //替换
+            $("#sizes").html(html);
+        }
+
+        //点击尺码   id == 尺码 （S。M。。)
+        function sizeToRed(target, id) {
+
+            //清理成白色
+// 	$("#sizes div").attr("class","item");
+            $("#sizes div").removeClass("selected");
+            //点击的颜色变成红边框
+// 	$(target).attr("class","item selected");
+            $(target).addClass("selected");
+
+            //价格
+		if (colorId == '1' && id == 'XL') {
+            //颜色及尺码 都成红色
+            //设置巴巴价
+            $("#bbs-price").html('11');
+            //保存一个SKuＩＤ
+            skuId = '554';
+        }
+
+        }
+    </script>
+</head>
+<body>
+<!-- header start -->
+<script type="text/javascript" src="/js/base-v1.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
+<script type="text/javascript">
+//搜索
+function serachKeyword(){
+    window.location.href = "http://localhost:8123/search?keyword=" + $("#keyword").val();}
+</script>
+<!--shortcut start-->
+<script>
+    $(function () {
+        //去判断用户是否登陆  0  1
+        $.ajax({
+            url: "http://localhost:8088/checkLogin",
+            type: "post",
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function (data) {
+                //1:登录
+                //其他状态: 未登录
+                if (data.status == 1) {
+                    $("#name").text(data.data.realName);
+                    $("#login").hide();
+                    $("#register").hide();
+                } else {
+                    $("#logout").hide();
+                    $("#myOrder").hide();
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("失败！error");
+                alert(XMLHttpRequest.status);
+                alert(XMLHttpRequest.readyState);
+                alert(textStatus);
+            }
+        });
+    });
+
+    //去登陆页面
+    function login() {
+        window.location.href = "http://localhost:8088/login?returnUrl=" + encodeURIComponent(encodeURIComponent(window.location.href));
+    }
+
+    function logout() {
+        window.location.href = "http://localhost:8088/logout";
+    }
+    
+    function addCart() {
+        
+    }
+</script>
+<div id="shortcut-2013">
+	<div class="w">
+		<ul class="fl lh">
+			<li class="fore1 ld" clstag="homepage|keycount|home2013|01a"><b></b>
+				<a href="javascript:addToFavorite()" >收藏新巴巴</a>
+			</li>
+		</ul>
+		<ul class="fr lh">
+			<li class="fore1" id="loginbar" clstag="homepage|keycount|home2013|01b">
+                您好！<span id="name">欢迎来到新巴巴运动网!</span>
+                <a href="javascript:;" onclick="login()" id="login">[登录]</a>&nbsp;
+                <a href="javascript:;" onclick="register()" id="register">[免费注册]</a>
+                <a href="javascript:;" onclick="logout()" id="logout">[退出]</a>
+                <a href="javascript:;" onclick="myOrder()" id="myOrder">我的订单</a>
+			</li>
+			<li class="fore2-1 ld" id="jd-vip">
+				<s></s>
+				<a target="_blank" rel="nofollow" href="http://vip.jd.com">会员俱乐部</a>
+			</li>
+			<li class="fore3 ld menu" id="app-jd" data-widget="dropdown" clstag="homepage|keycount|home2013|01d">
+				<s></s><i></i><span class="outline"></span><span class="blank"></span>
+				<a href="http://app.jd.com/" target="_blank">手机新巴巴</a><b></b>
+			</li>
+			<li class="fore4 ld menu" id="biz-service" data-widget="dropdown" clstag="homepage|keycount|home2013|01e">
+				<s></s>
+				<span class="outline"></span>
+				<span class="blank"></span>
+				客户服务
+				<b></b>
+				<div class="dd">
+					<div><a href="http://help.jd.com/index.html" target="_blank">帮助中心</a></div>
+					<div><a href="http://myjd.jd.com/repair/orderlist.action" target="_blank" rel="nofollow">售后服务</a></div>
+					<div><a href="http://chat.jd.com/jdchat/custom.action" target="_blank" rel="nofollow">在线客服</a></div>
+					<div><a href="http://myjd.jd.com/opinion/list.action" target="_blank" rel="nofollow">投诉中心</a></div>
+					<div><a href="http://www.jd.com/contact/service.html" target="_blank">客服邮箱</a></div>
+				</div>
+			</li>
+			<li class="fore5 ld menu" id="site-nav" data-widget="dropdown" clstag="homepage|keycount|home2013|01f">
+				<s></s>
+				<span class="outline"></span>
+				<span class="blank"></span>
+				网站导航
+				<b></b>
+				<div class="dd lh">
+					<dl class="item fore1">
+						<dt>特色栏目</dt>
+						<dd>
+							<div><a target="_blank" href="http://mobile.jd.com/index.do">新巴巴通信</a></div>
+							<div><a target="_blank" href="http://jdstar.jd.com/">校园之星</a></div>
+							<div><a target="_blank" href="http://my.jd.com/personal/guess.html">为我推荐</a></div>
+							<div><a target="_blank" href="http://shipingou.jd.com/">视频购物</a></div>
+							<div><a target="_blank" href="http://club.jd.com/">新巴巴社区</a></div>
+							<div><a target="_blank" href="http://read.jd.com/">在线读书</a></div>
+							<div><a target="_blank" href="http://diy.jd.com/">装机大师</a></div>
+							<div><a target="_blank" href="http://giftcard.jd.com/market/index.action">新巴巴E卡</a></div>
+							<div><a target="_blank" href="http://channel.jd.com/jiazhuang.html">家装城</a></div>
+							<div><a target="_blank" href="http://dapeigou.jd.com/">搭配购</a></div>
+							<div><a target="_blank" href="http://xihuan.jd.com/">我喜欢</a></div>
+						</dd>
+					</dl>
+					<dl class="item fore2">
+						<dt>企业服务</dt>
+						<dd>
+							<div><a target="_blank" href="http://giftcard.jd.com/company/index">企业客户</a></div>
+							<div><a target="_blank" href="http://sale.jd.com/p10997.html">办公直通车</a></div>
+						</dd>
+					</dl>
+					<dl class="item fore3">
+						<dt>旗下网站</dt>
+						<dd>
+							<div><a target="_blank" href="http://en.jd.com/">English Site</a></div>
+						</dd>
+					</dl>
+				</div>
+			</li>
+		</ul>
+		<span class="clr"></span>
+	</div>
+</div><!--shortcut end-->
+<div id="o-header-2013">
+	<div class="w" id="header-2013">
+		<div id="logo-2013" class="ld"><a href="/" hidefocus="true">
+			<b></b>
+			<img src="/images/XBB2.png" width="270" height="60" alt="新巴巴"></a>
+		</div>
+		<!--logo end-->
+		<div id="search-2013">
+			<div class="i-search ld">
+				<ul id="shelper" class="hide">
+				</ul>
+				<div class="form">
+					<input type="text" class="text" id="keyword" value="">
+					<input type="button" value="搜索" class="button" onclick="serachKeyword()" >
+				</div>
+			</div>
+			<div id="hotwords"></div>
+		</div>
+		<!--search end-->
+		<!--my360buy end-->
+		<div id="settleup-2013">
+			<dl>
+				<dt class="ld">
+					<span class="shopping">
+						<span id="shopping-amount">3</span>
+					</span>
+					<a href="/cart/cart.html" id="settleup-url">去购物车结算</a>
+				</dt>
+<!-- 				<dd>
+					<div class="prompt">
+						<div class="loading-style1"><b></b>加载中，请稍候...</div>
+					</div>
+				</dd>
+ -->			</dl>
+		</div>
+		<!--settleup end-->
+	</div>
+	<!--header end-->
+	<div class="w">
+		<div id="nav-2013">
+			<div id="categorys-2013" class="categorys-2014">
+				<div class="mt ld">
+					<h2><a href="http://www.jd.com/allSort.aspx" clstag="homepage|keycount|home2013|06a">全部商品分类<b></b></a></h2>
+				</div>
+				<div id="_JD_ALLSORT" class="mc">
+					<div class="item fore1">
+						<span data-split="1"><h3>
+								<a href="/products/1.html">图书、音像、电子书刊</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore2">
+						<span data-split="1"><h3>
+								<a href="/products/74.html">家用电器</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore3">
+						<span data-split="1"><h3>
+								<a href="/products/161.html">电脑、办公</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore4">
+						<span data-split="1"><h3>
+								<a href="/products/249.html">个护化妆</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore5">
+						<span data-split="1"><h3>
+								<a href="/products/290.html">钟表</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore6">
+						<span data-split="1"><h3>
+								<a href="/products/296.html">母婴</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore7">
+						<span data-split="1"><h3>
+								<a href="/products/378.html">食品饮料、保健食品</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore8">
+						<span data-split="1"><h3>
+								<a href="/products/438.html">汽车用品</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore9">
+						<span data-split="1"><h3>
+								<a href="/products/495.html">玩具乐器</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore10">
+						<span data-split="1"><h3>
+								<a href="/products/558.html">手机</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore11">
+						<span data-split="1"><h3>
+								<a href="/products/580.html">数码</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore12">
+						<span data-split="1"><h3>
+								<a href="/products/633.html">家居家装</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore13">
+						<span data-split="1"><h3>
+								<a href="/products/699.html">厨具</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="item fore14">
+						<span data-split="1"><h3>
+								<a href="/products/749.html">服饰内衣</a>
+							</h3>
+							<s></s></span>
+					</div>
+					<div class="extra">
+						<a {if="" pageconfig.ishome}clstag="homepage|keycount|home2013|0614a"
+							{="" if}="" href="http://www.jd.com/allSort.aspx">全部商品分类</a>
+					</div>
+				</div>
+			</div>
+			<div id="treasure" clstag="homepage|keycount|home2013|08a"></div>
+				<ul id="navitems-2013">
+					<li class="fore1" id="nav-home" clstag="homepage|keycount|home2013|07a"><a href="/">首页</a></li>
+					<li class="fore2" id="nav-fashion" clstag="homepage|keycount|home2013|07b"><a href="http://fashion.jd.com/">服装城</a></li>
+					<li class="fore3" id="nav-chaoshi" clstag="homepage|keycount|home2013|07c"><a href="http://channel.jd.com/chaoshi.html">食品</a></li>
+					<li class="fore4" id="nav-tuan" clstag="homepage|keycount|home2013|07d"><a href="http://tuan.jd.com/" target="_blank">团购</a></li>
+					<li class="fore5" id="nav-auction" clstag="homepage|keycount|home2013|07e"><a href="http://auction.jd.com/">夺宝岛</a></li>
+					<li class="fore6" id="nav-shan" clstag="homepage|keycount|home2013|07f"><a href="http://red.jd.com/" target="_blank">闪购</a></li>
+					<li class="fore7" id="nav-jinrong" clstag="homepage|keycount|home2013|07g1"><a href="http://jr.jd.com/" target="_blank">金融</a></li>
+				</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+(function(){if(pageConfig.navId){var object=document.getElementById("nav-"+pageConfig.navId);if(object)object.className+=" curr";}})();
+</script><!-- header end -->
+<div class="w">
+    <div class="breadcrumb">
+        <strong>
+            <a href="javascript:;">运动户外</a>
+        </strong>
+        <span>&nbsp;&gt;&nbsp;
+				<a href="javascript:;">健身训练</a>&nbsp;&gt;&nbsp;
+				<a href="javascript:;">瑜伽舞蹈</a>&nbsp;&gt;&nbsp;
+			</span>
+        <script type="text/javascript">
+            pageConfig.product.cat = [737, 794, 798];
+        </script>
+        <span><a href="javascript:;">依琦莲</a>&nbsp;&gt;&nbsp;<a
+                href="javascript:;">黑色瑜伽服</a>
+			</span>
+    </div>
+</div>
+<!--breadcrumb end-->
+<div class="w">
+    <div id="product-intro">
+        <div id="name">
+            <h1>黑色瑜伽服</h1>
+            <strong>黑色瑜伽服</strong>
+        </div>
+        <!--name end-->
+        <div class="clearfix">
+            <ul id="summary">
+                <li id="summary-price">
+                    <div class="dt">巴&nbsp;巴&nbsp;价：</div>
+                    <div class="dd">
+                        <strong class="p-price" id="bbs-price">￥888.00</strong> <a
+                            id="notice-downp" href="javascript:;" target="_blank">(降价通知)</a>
+                    </div>
+                </li>
+                <li id="summary-market">
+                    <div class="dt">商品编号：</div>
+                    <div class="dd">
+                        <span>299</span>
+                    </div>
+                </li>
+                <li id="summary-grade">
+                    <div class="dt">商品评分：</div>
+                    <div class="dd">
+                        <span class="star  sa0"></span><a href="javascript:;"></a>
+                    </div>
+                </li>
+                <!-- 商品评分-->
+                <li id="summary-stock" style="display: none;">
+                    <div class="dt">配&nbsp;送&nbsp;至：</div>
+                    <div class="dd">
+                        <div id="store-selector" class="">
+                            <div class="text">
+                                <div></div>
+                                <b></b>
+                            </div>
+                            <div class="content">
+                                <span class="clr"></span>
+                            </div>
+                            <div class="close"
+                                 onclick="$('#store-selector').removeClass('hover')"></div>
+                        </div>
+                        <!--store-selector end-->
+                        <div id="store-prompt"></div>
+                        <!--store-prompt end--->
+                    </div>
+                    <span class="clr"></span>
+                </li>
+                <li id="summary-service" class="hide">
+                    <div class="dt">服&#x3000;&#x3000;务：</div>
+                    <div class="dd">由 新巴巴 发货并提供售后服务。</div>
+                </li>
+                <li id="summary-tips" class="hide">
+                    <div class="dt">温馨提示：</div>
+                    <div class="dd"></div>
+                </li>
+                <li id="summary-gifts" class="hide">
+                    <div class="dt">赠&#x3000;&#x3000;品：</div>
+                    <div class="dd"></div>
+                </li>
+                <li id="summary-promotion-extra" class="none">
+                    <div class="dt">促销信息：</div>
+                    <div class="dd"></div>
+                </li>
+
+            </ul>
+            <!--summary end-->
+            <div id="choose" class="clearfix p-choose-wrap">
+                <div id="choose-color" class="li choose-color-shouji p-choose">
+                    <div class="dt">选择颜色：</div>
+                    <div class="dd" id="colors">
+                      <div class="item" onclick="colorToRed(this,'1')">
+                          <b></b>
+                          <a href="javascript:;" title="红色系">
+                              <img data-img="1"
+                                   src="/images/53f44cc2N0b714cb2_002.jpg"
+                                   alt="灰色三件套" height="25" width="25"><i>红色系</i></a>
+                      </div>
+                    </div>
+                </div>
+                <div id="choose-version" class="li p-choose">
+                    <div class="dt">选择尺码：</div>
+                    <div class="dd" id="sizes">
+                    </div>
+                </div>
+                <!--brand-bar-->
+                <ul id="choose">
+                    <li id='choose-type'></li>
+                    <li id="choose-amount">
+                        <div class="dt">购买数量：</div>
+                        <div class="dd">
+                            <div class="wrap-input">
+                                <a class="btn-reduce" href="javascript:;"
+                                   onclick="setAmount.reduce('#buy-num')">减少数量</a>
+                                <a class="btn-add" href="javascript:;"
+                                   onclick="setAmount.add('#buy-num')">增加数量</a>
+                                <input class="text" id="buy-num" value="1" onkeyup="setAmount.modify('#buy-num');"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="choose-btns">
+                        <div id="choose-btn-append" class="btn">
+                            <a class="btn-append" href="javascript:;" onclick="addCart()">加入购物车<b></b></a>
+                        </div>
+                        <div id="choose-btn-easybuy" class="btn"></div>
+                        <div id="choose-btn-divide" class="btn"></div>
+                    </li>
+                </ul>
+                <!--choose end-->
+                <span class="clr"></span>
+            </div>
+
+            <div id="preview">
+                <div id="spec-n1" class="jqzoom"
+                     clstag="shangpin|keycount|product|spec-n1">
+                    <img data-img="1" width="350" height="350" src="http://192.168.5.102/group1/M00/00/00/wKgFZlv2kjSADI5DAABDR6T2fNA823.jpg"
+                         alt="黑色瑜伽服" jqimg="http://192.168.5.102/group1/M00/00/00/wKgFZlv2kjSADI5DAABDR6T2fNA823.jpg"/>
+                </div>
+
+                <div id="spec-list" clstag="shangpin|keycount|product|spec-n5">
+                    <a href="javascript:;" class="spec-control" id="spec-forward"></a>
+                    <a href="javascript:;" class="spec-control" id="spec-backward"></a>
+                    <div class="spec-items">
+                        <ul class="lh">
+                            <li><img data-img="1" class="img-hover"
+                                     alt="黑色瑜伽服" src="http://192.168.5.102/group1/M00/00/00/wKgFZlv2kjSADI5DAABDR6T2fNA823.jpg" width="50" height="50">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="short-share">
+                    <div id="view-bigimg" class="fl">
+                        <b></b><a href="/images/example1.jpg"
+                                  target="_blank">查看大图</a>
+                    </div>
+                    <div id="share-list" class="share-list"
+                         clstag="shangpin|keycount|product|share">
+                        <div class="share-bd">
+                            <em class="share-hd">分享到：</em>
+                            <ul class="share-list-item clearfix">
+                                <li><a href="javascript:;" id="site-sina" title="分享到新浪微博">新浪微博</a></li>
+                                <li><a href="javascript:;" id="site-qq" title="分享到给QQ好友">QQ</a></li>
+                                <li><a href="javascript:;" id="site-qzone" title="分享到腾讯微博">腾讯微博</a></li>
+                                <li><a href="javascript:;" id="site-renren" title="分享到人人网">人人网</a></li>
+                                <li><a href="javascript:;" id="site-kaixing" title="分享到开心网">开心网</a></li>
+                                <li><a href="javascript:;" id="site-douban" title="分享到豆瓣">豆瓣</a></li>
+                                <li><a href="javascript:;" id="site-msn" title="分享给MSN好友">MSN</a></li>
+                                <li><a href="javascript:;" id="site-email" title="邮件分享给好友">邮件</a></li>
+                            </ul>
+                        </div>
+                        <div class="share-ft">
+                            <b></b>
+                        </div>
+                    </div>
+                    <div class="clb"></div>
+                </div>
+            </div>
+            <!--preview end-->
+        </div>
+        <!--product-intro end-->
+    </div>
+    <div class="w">
+        <div class="right">
+            <div id="product-detail" class="m m1" data-widget="tabs"
+                 clstag="shangpin|keycount|product|detail">
+                <div class="mt">
+                    <ul class="tab">
+                        <li clstag="shangpin|keycount|product|pinfotab"
+                            data-widget="tab-item" class="curr"><a href="javascript:;">商品介绍</a></li>
+                        <li clstag="shangpin|keycount|product|pcanshutab"
+                            data-widget="tab-item"><a href="javascript:;">规格参数</a></li>
+                        <li clstag="shangpin|keycount|product|packlisttab"
+                            data-widget="tab-item"><a href="javascript:;">包装清单</a></li>
+                        <li clstag="shangpin|keycount|product|pingjiatab"
+                            data-widget="tab-item"><a href="javascript:;">商品评价</a></li>
+                        <li clstag="shangpin|keycount|product|psaleservice"
+                            data-widget="tab-item"><a href="javascript:;">售后保障</a></li>
+                        <li clstag="shangpin|keycount|product|zhinan"
+                            data-widget='tab-item'><a href='javascript:;'>巴博士</a></li>
+                    </ul>
+                </div>
+                <div class="mc" data-widget="tab-content" id="product-detail-1">
+                    <ul class="detail-list">
+                        <li>商品名称：格宁 瑜伽服女套装广场舞服装三件套修身显瘦气质款运动服 G4022浅紫+深紫+深紫 L</li>
+                        <li title="1479973148">商品编号：1479973148</li>
+                        <li title="淘梦服饰专营店">店铺： <a href="http://mall.jd.com/index-110420.html"
+                                                   target="_blank">淘梦服饰专营店</a></li>
+                        <li title="2015-03-12 13:55:49">上架时间：2015-03-12 13:55:49</li>
+                        <li title="0.6kg">商品毛重：0.6kg</li>
+                        <li title="G4022">货号：G4022</li>
+                        <li title="环保人棉">材质：环保人棉</li>
+                        <li title="100-149">价位：100-149</li>
+                        <li title="女士">适用人群：女士</li>
+                        <li title="瑜伽服">类别：瑜伽服</li>
+                    </ul>
+                    <div class="detail-correction">
+                        <b></b>如果您发现商品信息不准确，欢迎纠错
+                    </div>
+                    <div id="item-desc" class="detail-content">
+                    </div>
+                    <div class="mc hide" data-widget="tab-content" id="product-detail-2"></div>
+                    <div class="mc  hide" data-widget="tab-content"
+                         id="product-detail-3">
+                    </div>
+                    <div class="mc  hide" data-widget="tab-content"
+                         id="product-detail-4"></div>
+                    <div class="mc hide " data-widget="tab-content"
+                         id="product-detail-5">
+                        <div class="item-detail">
+                            本产品全国联保，享受三包服务，质保期为：一年质保<br/>本产品提供上门安装调试、提供上门检测和维修等售后服务，自收到商品之日起，如您所购买家电商品出现质量问题，请先联系厂家进行检测
+                            ，凭厂商提供的故障检测证明，在“我的新巴巴-客户服务-返修退换货”页面提交退换申请，将有专业售后人员提供服务。新巴巴承诺您：30天内可为您退货或换货，180天内无需修理直接换货，超过180天按国家三包规定享受服务。<br/>您可以查询本品牌在各地售后服务中心的联系方式，<a
+                                class="link_1" href="http://www.changhong.com">请点击这儿查询......</a><br/>
+                            <br/>售后服务电话：400-811-1666<br/>品牌官方网站：<a
+                                href="http://www.changhong.com" target="_blank">http://www.changhong.com</a>
+
+                        </div>
+                    </div>
+                    <div id="product-detail-6" class="mc hide" data-widget="tab-content"></div>
+                    <!--知识库二级标签、标题-->
+                    <div id="promises">
+                        <strong>服务承诺：</strong><br/>
+                        新巴巴向您保证所售商品均为正品行货，新巴巴自营商品开具机打发票或电子发票。凭质保证书及新巴巴发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由新巴巴联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。新巴巴还为您提供具有竞争力的商品价格和<a
+                            href="http://www.jd.com/help/kdexpress.aspx" target="_blank">运费政策</a>，请您放心购买！
+                        <br/>
+                        <br/>
+                        注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                    </div>
+                    <div id="state">
+                        <strong>权利声明：</strong><br/>新巴巴上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是新巴巴重要的经营资源，未经许可，禁止非法转载使用。
+                        <p>
+                            <b>注：</b>本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。
+                        </p>
+                    </div>
+                </div>
+                <!--product-detail end-->
+            </div>
+            <!--right end-->
+            <div class="left">
+                <div class="mc">
+                    <ul>
+                        <li data-push="1" class="fore1">
+                            <div class="p-img">
+                                <a href="//item.jd.com/1409519600.html" title="" target="_blank">
+                                    <img width="160" height="160" data-lazy-img="done" alt=""
+                                         src="//img10.360buyimg.com/n2/jfs/t1546/262/352310690/199216/a1b1ed81/55779165Nb9a1d958.jpg"
+                                         class="">
+                                </a>
+                            </div>
+                            <div class="p-name">
+                                <a href="//item.jd.com/1409519600.html" title="" target="_blank">
+                                    皮尔瑜伽pieryoga 秋冬舞蹈家居瑜伽服女套装胸垫41343 短橘桃+41868橘桃 M
+                                </a>
+                            </div>
+                            <div class="p-price">
+                                <strong class="J-p-1409519600">￥129.00</strong>
+                            </div>
+                        </li>
+                        <li data-push="2" class="fore2">
+                            <div class="p-img">
+                                <a href="//item.jd.com/1635706164.html" target="_blank">
+                                    <img width="160" height="160" data-lazy-img="done" alt=""
+                                         src="//img14.360buyimg.com/n2/jfs/t1441/191/717818107/191061/52fde152/55a4e8a6Nd90a8abb.jpg"
+                                         class="">
+                                </a>
+                            </div>
+                            <div class="p-name">
+                                <a href="//item.jd.com/1635706164.html" title="" target="_blank">
+                                    皮尔瑜伽pieryoga 2015春夏舞蹈家居瑜伽服女套装胸垫53406M 柔和蓝+水墨兰 M
+                                </a>
+                            </div>
+                            <div class="p-price">
+                                <strong class="J-p-1635706164">￥228.00</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--left end-->
+        <span class="clr"></span>
+    </div>
+    <!-- footer start -->
+<div class="w" clstag="homepage|keycount|home2013|37a">
+	<div id="service-2013">
+		<dl class="fore1">
+			<dt><b></b><strong>购物指南</strong></dt>
+			<dd>
+				<div><a href="javascript:;" rel="nofollow">购物流程</a></div>
+				<div><a href="javascript:;" rel="nofollow">会员介绍</a></div>
+				<div><a href="javascript:;" rel="nofollow">团购/机票</a></div>
+				<div><a href="javascript:;" rel="nofollow">常见问题</a></div>
+				<div><a href="javascript:;" rel="nofollow">大家电</a></div>
+				<div><a href="javascript:;" rel="nofollow">联系客服</a></div>
+			</dd>
+		</dl>
+		<dl class="fore2">		
+			<dt><b></b><strong>配送方式</strong></dt>
+			<dd>
+				<div><a href="javascript:;" rel="nofollow">上门自提</a></div>
+				<div><a href="javascript:;" rel="nofollow">211限时达</a></div>
+				<div><a href="javascript:;" rel="nofollow">配送服务查询</a></div>
+				<div><a href="javascript:;" rel="nofollow">配送费收取标准</a></div>
+				<div><a href="javascript:;" rel="nofollow">如何送礼</a></div>
+				<div><a href="javascript:;">海外配送</a></div>
+			</dd>
+		</dl>
+		<dl class="fore3">
+			<dt><b></b><strong>支付方式</strong></dt>
+			<dd>
+				<div><a href="javascript:;" rel="nofollow">货到付款</a></div>
+				<div><a href="javascript:;" rel="nofollow">在线支付</a></div>
+				<div><a href="javascript:;" rel="nofollow">分期付款</a></div>
+				<div><a href="javascript:;" rel="nofollow">邮局汇款</a></div>
+				<div><a href="javascript:;" rel="nofollow">公司转账</a></div>
+			</dd>
+		</dl>
+		<dl class="fore4">		
+			<dt><b></b><strong>售后服务</strong></dt>
+			<dd>
+				<div><a href="javascript:;" rel="nofollow">售后政策</a></div>
+				<div><a href="javascript:;" rel="nofollow">价格保护</a></div>
+				<div><a href="javascript:;" rel="nofollow">退款说明</a></div>
+				<div><a href="javascript:;" rel="nofollow">返修/退换货</a></div>
+				<div><a href="javascript:;" rel="nofollow">取消订单</a></div>
+			</dd>
+		</dl>
+		<dl class="fore5">
+			<dt><b></b><strong>特色服务</strong></dt>
+			<dd>		
+				<div><a href="javascript:;">夺宝岛</a></div>
+				<div><a href="javascript:;">DIY装机</a></div>
+				<div><a href="javascript:;" rel="nofollow">延保服务</a></div>
+				<div><a href="javascript:;" rel="nofollow">新巴巴E卡</a></div>
+				<div><a href="javascript:;" rel="nofollow">节能补贴</a></div>
+				<div><a href="javascript:;" rel="nofollow">新巴巴通信</a></div>
+			</dd>
+		</dl>
+		<div class="fr">
+			<div class="sm" id="branch-office">
+				<div class="smt">
+					<h3>新巴巴自营覆盖区县</h3>
+				</div>
+				<div class="smc">
+					<p>新巴巴已向全国1859个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+					<p class="ar"><a href="javascript:;">查看详情&nbsp;></a></p>
+				</div>
+			</div>
+		</div>
+		<span class="clr"></span>
+	</div>
+</div>
+<div class="w" clstag="homepage|keycount|home2013|38a">
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<div id="footer-2013">
+	<div class="links"><a href="http://www.jd.com/intro/about.aspx" target="_blank" rel="nofollow">关于我们</a>|<a href="http://www.jd.com/contact/" target="_blank" rel="nofollow">联系我们</a>|<a href="http://zhaopin.jd.com/" target="_blank" rel="nofollow">人才招聘</a>|<a href="http://www.jd.com/contact/joinin.aspx" target="_blank" rel="nofollow">商家入驻</a>|<a href="http://jzt.jd.com" target="_blank" rel="nofollow">营销中心</a>|<a href="http://app.jd.com/" target="_blank" rel="nofollow">手机新巴巴</a>|<a href="http://club.jd.com/links.aspx" target="_blank">友情链接</a>|<a href="http://media.jd.com/" target="_blank">销售联盟</a>|<a target="_blank" href="http://club.jd.com/">新巴巴社区</a>|<a target="_blank" href="http://gongyi.jd.com">新巴巴公益</a>|<a target="_blank" href="http://en.jd.com/">English Site</a></div>
+</div></div>
+<script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="/js/jquery-extend.js"></script>
+<script type="text/javascript" src="/js/lib-v1.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/babasport.js" charset="utf-8"></script>
+<script type="text/javascript"> (function(){
+var A="<strong>热门搜索：</strong><a href='http://sale.jd.com/act/OfHQzJ2GLoYlmTIu.html' target='_blank' style='color:#ff0000' clstag='homepage|keycount|home2013|03b1'>校园之星</a><a href='http://sale.jd.com/act/aEBHqLFMfVzDZUvu.html' target='_blank'>办公打印</a><a href='http://www.jd.com/pinpai/878-12516.html' target='_blank'>美菱冰箱</a><a href='http://sale.jd.com/act/nuzKb6ZiYL.html' target='_blank'>无肉不欢</a><a href='http://sale.jd.com/act/ESvhtcAJNbaj.html' target='_blank'>万件好货</a><a href='http://sale.jd.com/act/nAqiWgU34frQolt.html' target='_blank'>iPhone6</a><a href='http://sale.jd.com/act/p0CmUlEFPHLX.html' target='_blank'>哈利波特</a><a href='http://sale.jd.com/act/FstSdb2vCOLa8BRi.html' target='_blank'>美模接驾</a>";
+var B=["java","apple","LG G3","天梭","保温杯","三个爸爸"];
+B=pageConfig.FN_GetRandomData(B);
+$("#hotwords").html(A);
+var _searchValue = "123";
+if(_searchValue.length == 0){
+	_searchValue = B;
+}
+$("#key").val(_searchValue).bind("focus",function(){if (this.value==B){this.value="";this.style.color="#333"}}).bind("blur",function(){if (!this.value){this.value=B;this.style.color="#999"}});
+})();
+</script>    <!-- footer end -->
+    <script type="text/javascript" src="/js/lib-v1.js"></script>
+    <script type="text/javascript" src="/js/product.js"></script>
+    <script type="text/javascript" src="/js/iplocation_server.js"></script>
+</body>
+</html>

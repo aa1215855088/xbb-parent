@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.xbb.user.mapper.UserMapper">
+    <!-- BbsBuyer的resultMap,column是给数据库列起的别名,它对应property类的属性 -->
+    <resultMap id="result_BbsBuyer_Map" type="com.hnguigu.xbb.user.domian.User">
+        <id column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <result column="real_name" property="realName"/>
+        <result column="register_time" property="registerTime"/>
+        <result column="province" property="province"/>
+        <result column="city" property="city"/>
+        <result column="town" property="town"/>
+        <result column="addr" property="addr"/>
+        <result column="is_del" property="isDel"/>
+        <result column="image" property="image"/>
+    </resultMap>
+
+</mapper>
