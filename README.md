@@ -65,6 +65,8 @@ Log4J | 日志组件  | [http://logging.apache.org/log4j/1.2/](http://logging.ap
 Maven | 项目构建管理  | [http://maven.apache.org/](http://maven.apache.org/)
 freemarker | 模板引擎  | [https://freemarker.apache.org/](https://freemarker.apache.org/)
 git | 分布式版本控制 |[https://git-scm.com/](https://git-scm.com/)
+hutool | 工具集 |[https://www.hutool.cn/](https://www.hutool.cn/)
+
         
         
         
