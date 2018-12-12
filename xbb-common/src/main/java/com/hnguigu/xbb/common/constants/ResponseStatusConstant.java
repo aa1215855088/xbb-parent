@@ -6,7 +6,11 @@ package com.hnguigu.xbb.common.constants;
  * @author: 徐子楼
  * @create: 2018-08-09 15:51
  **/
-public interface ResponseStatusConstant {
+public final class ResponseStatusConstant {
+
+    private ResponseStatusConstant(){
+
+    }
 
     /**
      * 响应状态码1:表示成功

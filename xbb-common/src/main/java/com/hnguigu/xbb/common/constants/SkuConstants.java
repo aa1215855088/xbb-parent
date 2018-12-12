@@ -24,7 +24,12 @@ package com.hnguigu.xbb.common.constants;
  * @author: 徐子楼
  * @create: 2018-11-11 14:35
  **/
-public class SkuConstants {
+public final class SkuConstants {
+
+    private SkuConstants() {
+
+    }
+
     /**
      * 商品市场价格初始化
      */

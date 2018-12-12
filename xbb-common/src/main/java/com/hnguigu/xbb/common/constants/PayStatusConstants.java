@@ -24,8 +24,12 @@ package com.hnguigu.xbb.common.constants;
  * @author: 徐子楼
  * @create: 2018-12-09 02:19
  **/
-public class PayStatusConstants {
+public final class PayStatusConstants {
 
+
+    private PayStatusConstants() {
+
+    }
 
     /**
      * 货到付款
@@ -47,7 +51,7 @@ public class PayStatusConstants {
     /**
      * 退款成功
      */
-    public static final Integer REFUND_SUCCESS= 4;
+    public static final Integer REFUND_SUCCESS = 4;
     /**
      * 退款失败
      */

@@ -24,8 +24,11 @@ package com.hnguigu.xbb.common.constants;
  * @author: 徐子楼
  * @create: 2018-12-09 02:26
  **/
-public class OrderStatusConstants {
+public final class OrderStatusConstants {
 
+    private OrderStatusConstants() {
+
+    }
 
     /**
      * 提交订单
